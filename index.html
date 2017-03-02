@@ -9,7 +9,9 @@
 <body>
 	<div class="wrapper">
 		<header>
-			<p class="number-block"><img src="img/handset.png" alt="image">(044)123-45-67 (044)567-89-10</p>
+			<p class="contact-block">
+				<img src="img/handset.png" alt="image">(044)123-45-67 (044)567-89-10
+			</p>
 			<div class="authorisation-block">
 				<img src="img/userImage.png" alt="userImage.png">
 				<input type="text" placeholder="логин">
@@ -36,25 +38,26 @@
 				<div class="basket-block">
 					<img src="img/cart.png" alt="cart.png">
 					<p>
-					товаров:<span>0</span>на сумму:<span>0.00 грн</span></p>
+						товаров:<span>0</span>на сумму:<span>0.00 грн</span>
+					</p>
 				</div>
 			</div>
 		</header>
-		<nav>
-			<form class="search-cars" action="#">
-				<div class="header-cars">
-					<span>Диски:</span>
-					<span>Поиск  по  автомобилю</span>
-					<span>Шины:</span>
-				</div>
-				<div class="list">
-					<div class="rims-labels">
+		<main>
+			<nav>
+				<form class="search-cars" action="#">
+					<div class="title-search">
+						<span>Диски:</span>
+						<span>Поиск  по  автомобилю</span>
+						<span>Шины:</span>
+					</div>
+					<div class="name-property">
 						<label>Марка <span>авто</span></label>
 						<label>Модель <span>автомобиль</span></label>
 						<label>Год выпуска <span>автомобиля</span></label>
 						<label>Комплектация</label>
 					</div>
-					<div class="rims-marks">
+					<div class="value-property">
 						<select>
 							<option></option>
 							<option>BMW</option>
@@ -80,13 +83,13 @@
 							<option>ЗАЗ</option>
 						</select>
 					</div>
-					<div class="wheel rims-labels">
+					<div class="name-property">
 						<label>Марка <span>авто</span></label>
 						<label>Модель <span>автомобиль</span></label>
 						<label>Год выпуска <span>автомобиля</span></label>
 						<label>Комплектация</label>
 					</div>
-					<div class="rims-marks">
+					<div class="value-property">
 						<select>
 							<option></option>
 							<option>BMW</option>
@@ -112,18 +115,16 @@
 							<option>ЗАЗ</option>
 						</select>
 					</div>
-				</div>
-				<input type="submit" value="поиск...">
-			</form>
-			<form class="search-wheels" action="#">
-				<span class="wheels-header">поиск шин</span>
-				<div class="list-wheels">
-					<div class="wheels-labels">
+					<input type="submit" value="поиск...">
+				</form>
+				<form class="search-wheels" action="#">
+					<span>поиск шин</span>
+					<div class="name-property">
 						<label>Размер:</label>
 						<label>R</label>
 						<label>Сезон:</label>
 					</div>	
-					<div class="wheels-select">
+					<div class="value-property">
 						<select>
 							<option>145</option>
 							<option>146</option>
@@ -136,29 +137,27 @@
 							<option>146</option>
 							<option>147</option>
 						</select>
-						<select class="R">
+						<select>
 							<option>12</option>
 							<option>13</option>
 							<option>14</option>
 						</select>
-						<div class="period">
+						<div>
 							<label><input type="checkbox">лето</label>
 							<label><input type="checkbox">зима</label>
 							<label><input type="checkbox">всесез</label>
 						</div>
 					</div>	
-				</div>	
-				<input type="submit" value="поиск...">	
-			</form>
-			<form class="search-rims" action="#">
-				<div class="rims-option">
-					<span class="rims-header">поиск дисков</span>
-					<div class="rims-property">
+					<input type="submit" value="поиск...">	
+				</form>
+				<form class="search-rims" action="#">
+					<span>поиск дисков</span>
+					<div class="name-property">
 						<label>Диаметр<span>диска:</span></label>
 						<label>Количество<span>крепежных отверстий:</span></label>
 						<label>Диаметр<span>расположения крепёжных отверстий:</span></label>
 					</div>
-					<div class="rims-value">
+					<div class="value-property">
 						<select>
 							<option>14</option>
 							<option>15</option>
@@ -190,11 +189,10 @@
 						</select>
 					</div>
 					<input type="submit" value="поиск...">	
-				</div>
-			</form>
-			</nav>
+				</form>
+				</nav>
 			<div class="content">
-				<aside class="product-catalog">
+				<aside>
 					<ul>
 						<li>
 							<img src="img/icon.png" alt="icon.png">
@@ -232,63 +230,63 @@
 						<li><a href="#">Наименование4</a></li>
 					</ul>
 				</aside>
-				<div class="main">
+				<div class="product">
 					<figure>
 						<span>Goodyear</span>
 						<p>Ultra Grip Extreme</p>
-						<img src="img/Goodyear.jpg" alt="Goodyear.jpg">
+						<img src="img/Goodyear.png" alt="Goodyear.jpg">
 						<figcaption>90.00 грн.</figcaption>
 					</figure>
-					<figure class="nokian">
+					<figure>
 						<span>Nokian</span>
 						<p>Hakkapeliitta R</p>
-						<img src="img/Nokian.jpg" alt="Nokian.jpg">
+						<img src="img/Nokian.png" alt="Nokian.jpg">
 						<figcaption>115.00 грн.</figcaption>
 					</figure>
 					<figure>
 						<span>Hankook</span>
 						<p>K 708 155/65 R14</p>
-						<img src="img/Hankook.jpg" alt="Hankook.jpg">
+						<img src="img/Hankook.png" alt="Hankook.jpg">
 						<figcaption>393.00 грн.</figcaption>
 					</figure>
 					<figure>
 						<span>Goodyear</span>
 						<p>Ultra Grip Extreme</p>
-						<img src="img/Goodyear.jpg" alt="Goodyear.jpg">
+						<img src="img/Goodyear.png" alt="Goodyear.jpg">
 						<figcaption>90.00 грн.</figcaption>
 					</figure>	
-					<figure class="nokian">
+					<figure>
 						<span>Nokian</span>
 						<p>Hakkapeliitta R</p>
-						<img src="img/Nokian.jpg" alt="Nokian.jpg">
+						<img src="img/Nokian.png" alt="Nokian.jpg">
 						<figcaption>115.00 грн.</figcaption>
 					</figure>
 					<figure>
 						<span>Hankook</span>
 						<p>K 708 155/65 R14</p>
-						<img src="img/Hankook.jpg" alt="Hankook.jpg">
+						<img src="img/Hankook.png" alt="Hankook.jpg">
 						<figcaption>393.00 грн.</figcaption>
 					</figure>
 					<figure>
 						<span>Goodyear</span>
 						<p>Ultra Grip Extreme</p>
-						<img src="img/Goodyear.jpg" alt="Goodyear.jpg">
+						<img src="img/Goodyear.png" alt="Goodyear.jpg">
 						<figcaption>90.00 грн.</figcaption>
 					</figure>	
-					<figure class="nokian">
+					<figure>
 						<span>Nokian</span>
 						<p>Hakkapeliitta R</p>
-						<img src="img/Nokian.jpg" alt="Nokian.jpg">
+						<img src="img/Nokian.png" alt="Nokian.jpg">
 						<figcaption>115.00 грн.</figcaption>
 					</figure>
 					<figure>
 						<span>Hankook</span>
 						<p>K 708 155/65 R14</p>
-						<img src="img/Hankook.jpg" alt="Hankook.jpg">
+						<img src="img/Hankook.png" alt="Hankook.jpg">
 						<figcaption>393.00 грн.</figcaption>
 					</figure>
 				</div>
-				<aside class="product-catalog brands">
+				<aside>
 					<ul>
 						<li>
 							<img src="img/icon.png" alt="icon.png">
@@ -301,7 +299,7 @@
 								<img src="img/wheel.png" alt="wheel.png">
 								<span>Шины</span>
 							</li>
-							<div class="checkbox">
+							<div>
 								<label><input type="checkbox">Бренд 1</label>
 								<label><input type="checkbox">Бренд 2</label>
 								<label><input type="checkbox">Бренд 3</label>
@@ -322,8 +320,9 @@
 					</form>
 				</aside>
 			</div>
+		</main>
 		<footer>
-			<img src="img/brand-logo.jpg" alt="brand-logo.jpg">
+			<img src="img/brand-logo.png" alt="brand-logo.jpg">
 			<div class="contacts">
 				<ul>
 					<li><a href="#">О компании<span>|</span></a></li>
